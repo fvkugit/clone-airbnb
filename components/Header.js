@@ -9,7 +9,8 @@ import {
 function Header() {
   return (
     <header className="sticky top-0 z-50 grid grid-cols-3 bg-white py-5 px-5 border-b-2 border-gray-100">
-      <div className="relative flex items-center h-10 my-auto">
+
+      <div className="relative items-center h-10 my-auto hidden md:flex">
         <svg className="h-10 text-rose-500 md:inline-flex hidden">
           <path></path>
           <path
@@ -29,7 +30,7 @@ function Header() {
         </svg>
       </div>
 
-      <div className="flex items-center border-2 rounded-full py-2">
+      <div className="flex items-center border-2 rounded-full py-2 grow w-100 col-span-3 md:col-auto">
         <input
           type="text"
           name=""
@@ -40,8 +41,7 @@ function Header() {
         <MagnifyingGlassCircleIcon className="h-9 cursor-pointer text-red-500 bg-white rounded-full hidden md:inline-flex mr-2" />
       </div>
 
-      <div className="flex space-x-5 justify-end items-center text-gray-500">
-
+      <div className="space-x-5 justify-end items-center text-gray-500 hidden md:flex">
         <p className="hidden lg:inline-flex cursor-pointer">Airbnb your home!</p>
         <HomeModernIcon className="h-5 lg:hidden cursor-pointer" />
         <GlobeAltIcon className="h-5 cursor-pointer" />
@@ -50,6 +50,7 @@ function Header() {
           <UserCircleIcon className="h-5" />
         </div>
       </div>
+
     </header>
   );
 }
