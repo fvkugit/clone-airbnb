@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header.js'
 import Banner from '../components/Banner.js'
+import Categories from '../components/Categories.js'
 
 
 const Home: NextPage = () => {
@@ -13,7 +14,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <Header/>
-    <Banner/>
+    {/* <Banner/> */}
+    <Categories/>
+
+
     </div>
   )
 }
