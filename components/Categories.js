@@ -62,12 +62,12 @@ function Categories() {
     <div>
       <div
         ref={scrollLeftButton}
-        className="absolute hidden left-12 bg-white after:bg-blue after:h-20 after:w-10 after:bg-gradient-to-r to-transparent from-white after:z-50"
+        className="absolute hidden left-12 bg-white after:bg-blue after:h-20 after:w-10 after:bg-gradient-to-r to-transparent from-white after:z-40 "
       >
         <div className="z-50 bg-white flex items-center">
           <button
             onClick={scrollLeft}
-            className="bg-white px-1 py-1 rounded-full border border-gray-500"
+            className="bg-white px-1 py-1 rounded-full border border-gray-500 hover:shadow-lg shadow-black hover:scale-105 transition duration-75"
           >
             <ChevronLeftIcon className="h-5" />
           </button>
@@ -76,12 +76,12 @@ function Categories() {
 
       <div
         ref={scrollRightButton}
-        className="absolute hidden lg:inline-flex right-12 bg-white before:bg-blue before:h-20 before:w-10 before:bg-gradient-to-r from-transparent to-white before:z-50"
+        className="absolute hidden lg:inline-flex right-12 bg-white before:bg-blue before:h-20 before:w-10 before:bg-gradient-to-r from-transparent to-white before:z-40"
       >
         <div className="z-50 bg-white flex items-center">
           <button
             onClick={scrollRight}
-            className="bg-white px-1 py-1 rounded-full border border-gray-500"
+            className="bg-white px-1 py-1 rounded-full border border-gray-500 hover:shadow-lg shadow-black hover:scale-105 transition duration-75"
           >
             <ChevronRightIcon className="h-5" />
           </button>
