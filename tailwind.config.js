@@ -8,7 +8,11 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens:{
+        'xs': '550px',
+      },
+    },
   },
   plugins: [
     plugin(function ({ addUtilities }) {
