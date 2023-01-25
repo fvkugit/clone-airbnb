@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { HeartIcon } from "@heroicons/react/24/solid";
+import { StarIcon } from "@heroicons/react/20/solid";
 
 function AirbnbList() {
   return (
@@ -17,7 +18,8 @@ function AirbnbList() {
             style={{ objectFit: "cover", objectPosition: "center" }}
           />
         </div>
-        <div className="mt-3 ml-1">
+        <div className="mt-3 ml-1 relative w-full">
+        <div className="absolute right-4 h-4 w-4 inline text-gray-800"><StarIcon/>5.0</div>
         <p className="font-semibold">Nova Prata, Brasil</p>
         <p className="text-gray-500">979 kilometers away</p>
         <p className="text-gray-500">Feb 7 - 14</p>
@@ -39,7 +41,8 @@ function AirbnbList() {
             style={{ objectFit: "cover", objectPosition: "center" }}
           />
         </div>
-        <div className="mt-3 ml-1">
+        <div className="mt-3 ml-1 relative w-full">
+        <div className="absolute right-4 h-4 w-4 inline text-gray-800"><StarIcon/>5.0</div>
         <p className="font-semibold">San Pedro de Atacama, Chile</p>
         <p className="text-gray-500">1,344 kilometers away</p>
         <p className="text-gray-500">Feb 10 - 15</p>
